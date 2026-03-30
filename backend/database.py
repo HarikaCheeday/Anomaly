@@ -1,6 +1,9 @@
 from pymongo import MongoClient
 import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class MongoDBManager:
     def __init__(self, uri="mongodb://localhost:27017/", db_name="iot_anomaly_db"):
@@ -23,5 +26,5 @@ class MongoDBManager:
             self.users = None
             self.predictions = None
             
-MONGO_URI = "mongodb+srv://hariharika192_db_user:Harika2004@cluster0.wkzsgzp.mongodb.net/?appName=Cluster0&retryWrites=true&w=majority"
+MONGO_URI = os.getenv("MONGO_URI")
 mongo = MongoDBManager(uri=MONGO_URI)

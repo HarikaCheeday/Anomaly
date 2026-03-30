@@ -9,7 +9,7 @@ import bcrypt
 import datetime
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'astr_guard_secret_super_key_2026'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback_secret_key')
 
 CORS(app) 
 
