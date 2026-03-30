@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Zap, ShieldCheck, ShieldAlert, Cpu } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://anomaly-m60v.onrender.com/api';
 
 const Predictor = ({ auth }) => {
   const defaultFeatures = {

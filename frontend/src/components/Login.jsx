@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import { ShieldAlert, LogIn } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://anomaly-m60v.onrender.com/api';
 
 const Login = ({ setAuthParams }) => {
   const [username, setUsername] = useState('');

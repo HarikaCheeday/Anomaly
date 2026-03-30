@@ -3,7 +3,7 @@ import axios from 'axios';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, PieChart, Pie, Cell } from 'recharts';
 import { Activity, ShieldAlert, Database, ArrowUpRight, Lock } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://anomaly-m60v.onrender.com/api';
 
 const Dashboard = ({ auth }) => {
   const [stats, setStats] = useState({ total_predictions: 0, total_anomalies: 0, anomaly_rate_percent: 0 });

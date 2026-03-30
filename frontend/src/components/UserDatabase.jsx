@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Users, Lock } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://anomaly-m60v.onrender.com/api';
 
 const UserDatabase = ({ auth }) => {
   const [users, setUsers] = useState([]);
